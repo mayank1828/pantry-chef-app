@@ -3,8 +3,7 @@ import { initializeApp } from 'firebase/app';
 import { 
   getAuth, 
   signInAnonymously, 
-  onAuthStateChanged,
-  signInWithCustomToken
+  onAuthStateChanged 
 } from 'firebase/auth';
 import { 
   getFirestore, 
@@ -25,28 +24,24 @@ import {
   Search, 
   ShoppingBag, 
   Check, 
-  Utensils, 
   ArrowRight,
-  Filter,
   AlertCircle,
   Loader2
 } from 'lucide-react';
 
 // --- Firebase Configuration ---
-// TODO: Replace the lines below with your actual Firebase config object
-// You can get this from Firebase Console -> Project Settings -> General -> "Your apps"
+// I have filled this in with your specific keys. Do not change this.
 const firebaseConfig = {
-  // apiKey: "AIzaSy...",
-  // authDomain: "your-app.firebaseapp.com",
-  // projectId: "your-app",
-  // storageBucket: "your-app.appspot.com",
-  // messagingSenderId: "123456789",
-  // appId: "1:123456789:web:..."
+  apiKey: "AIzaSyCZGI_kaTc2OPE5hL8eQ7DJ5iQ51jMF5L8",
+  authDomain: "pantry-chef-app-19f65.firebaseapp.com",
+  projectId: "pantry-chef-app-19f65",
+  storageBucket: "pantry-chef-app-19f65.firebasestorage.app",
+  messagingSenderId: "569222077550",
+  appId: "1:569222077550:web:904a90b0d43e9368c49a7f",
+  measurementId: "G-W213848JL6"
 };
 
 // Initialize Firebase
-// Ensure firebaseConfig is valid before running.
-// If you are testing locally without keys, this might error.
 const app = initializeApp(firebaseConfig);
 const auth = getAuth(app);
 const db = getFirestore(app);
@@ -559,9 +554,9 @@ export default function App() {
                           </div>
                         </div>
                       ) : (
-                         <p className="text-sm text-emerald-600 flex items-center gap-1 bg-emerald-50 p-2 rounded-lg">
-                           <Check size={14} /> You have everything!
-                         </p>
+                          <p className="text-sm text-emerald-600 flex items-center gap-1 bg-emerald-50 p-2 rounded-lg">
+                            <Check size={14} /> You have everything!
+                          </p>
                       )}
                     </div>
                   </div>
@@ -661,7 +656,7 @@ export default function App() {
         {/* --- SHOPPING TAB --- */}
         {activeTab === 'shopping' && (
           <div className="max-w-2xl mx-auto animate-in fade-in slide-in-from-bottom-4 duration-500">
-             <div className="bg-white rounded-2xl shadow-sm border border-slate-200 overflow-hidden">
+              <div className="bg-white rounded-2xl shadow-sm border border-slate-200 overflow-hidden">
                 <div className="p-6 border-b border-slate-100 bg-amber-50/50">
                    <h2 className="text-2xl font-bold text-slate-800 flex items-center gap-3">
                      <ShoppingBag className="text-amber-500" />
