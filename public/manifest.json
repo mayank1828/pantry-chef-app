@@ -1,23 +1,15 @@
 {
-  "short_name": "PantryChef",
-  "name": "PantryChef Meal Planner",
-  "description": "Smart meal planning based on ingredients you already have.",
+  "name": "Kitchen Management System",
+  "short_name": "KitchenSys",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#ffffff",
+  "theme_color": "#4f46e5",
   "icons": [
     {
-      "src": "[https://cdn-icons-png.flaticon.com/512/3565/3565418.png](https://cdn-icons-png.flaticon.com/512/3565/3565418.png)",
-      "type": "image/png",
-      "sizes": "192x192"
-    },
-    {
-      "src": "[https://cdn-icons-png.flaticon.com/512/3565/3565418.png](https://cdn-icons-png.flaticon.com/512/3565/3565418.png)",
-      "type": "image/png",
-      "sizes": "512x512"
+      "src": "https://cdn-icons-png.flaticon.com/512/3565/3565418.png",
+      "sizes": "512x512",
+      "type": "image/png"
     }
-  ],
-  "start_url": ".",
-  "display": "standalone",
-  "orientation": "portrait",
-  "scope": "/",
-  "theme_color": "#10b981",
-  "background_color": "#ffffff"
+  ]
 }
