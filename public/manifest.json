@@ -1,15 +1,36 @@
 {
   "name": "Kitchen Management System",
   "short_name": "KitchenSys",
+  "description": "A professional kitchen management dashboard to track inventory, suggest recipes, and plan weekly meals.",
   "start_url": "/",
+  "id": "/",
   "display": "standalone",
+  "orientation": "portrait",
   "background_color": "#ffffff",
   "theme_color": "#4f46e5",
   "icons": [
     {
-      "src": "https://cdn-icons-png.flaticon.com/512/3565/3565418.png",
+      "src": "https://cdn.jsdelivr.net/gh/twitter/twemoji@14.0.2/assets/72x72/1f468-200d-1f373.png",
+      "sizes": "72x72",
+      "type": "image/png"
+    },
+    {
+      "src": "https://cdn.jsdelivr.net/gh/twitter/twemoji@14.0.2/assets/72x72/1f468-200d-1f373.png",
       "sizes": "512x512",
       "type": "image/png"
+    }
+  ],
+  "screenshots": [
+    {
+      "src": "https://images.unsplash.com/photo-1556910103-1c02745a30bf?auto=format&fit=crop&w=500&q=60",
+      "sizes": "500x333",
+      "type": "image/jpg",
+      "form_factor": "wide"
+    },
+    {
+      "src": "https://images.unsplash.com/photo-1556910103-1c02745a30bf?auto=format&fit=crop&w=300&q=60",
+      "sizes": "300x200",
+      "type": "image/jpg"
     }
   ]
 }
